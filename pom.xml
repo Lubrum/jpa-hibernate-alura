@@ -21,18 +21,67 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.0</version>
                 <configuration>
-                    <release>11</release>
+                    <release>19</release>
                 </configuration>
             </plugin>
         </plugins>
     </build>
 
     <dependencies>
+
+        <!-- mudança para o jakarta -->
         <dependency>
             <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-entitymanager</artifactId>
-            <version>5.4.27.Final</version>
+            <artifactId>hibernate-core</artifactId>
+            <version>6.2.2.Final</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-c3p0</artifactId>
+            <version>6.2.2.Final</version>
+        </dependency>
+
+        <!--        <dependency>-->
+        <!--            <groupId>org.hibernate</groupId>-->
+        <!--            <artifactId>hibernate-entitymanager</artifactId>-->
+        <!--            <version>5.6.15.Final</version>-->
+        <!--        </dependency>-->
+
+        <!-- dependências para o hibernate 4.2.11.Final funcionar com java (11), não rolou com java 19 ou 17 -->
+
+        <!--        <dependency>-->
+        <!--            <groupId>org.hibernate</groupId>-->
+        <!--            <artifactId>hibernate-entitymanager</artifactId>-->
+        <!--            <version>4.3.11.Final</version>-->
+        <!--        </dependency>-->
+
+        <!-- dependências para o hibernate 3.6.10.Final funcionar com java recente (19) -->
+
+        <!--        <dependency>-->
+        <!--            <groupId>org.hibernate</groupId>-->
+        <!--            <artifactId>hibernate-entitymanager</artifactId>-->
+        <!--            <version>3.6.10.Final</version>-->
+        <!--            <exclusions>-->
+        <!--                <exclusion>-->
+        <!--                    <artifactId>javassist</artifactId>-->
+        <!--                    <groupId>javassist</groupId>-->
+        <!--                </exclusion>-->
+        <!--            </exclusions>-->
+        <!--        </dependency>-->
+
+        <!--        &lt;!&ndash; javassist with fixed https://issues.jboss.org/browse/JASSIST-174 &ndash;&gt;-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.javassist</groupId>-->
+        <!--            <artifactId>javassist</artifactId>-->
+        <!--            <version>3.18.2-GA</version>-->
+        <!--        </dependency>-->
+
+        <!--        <dependency>-->
+        <!--            <groupId>javax.persistence</groupId>-->
+        <!--            <artifactId>persistence-api</artifactId>-->
+        <!--            <version>1.0.2</version>-->
+        <!--        </dependency>-->
 
         <dependency>
             <groupId>com.h2database</groupId>

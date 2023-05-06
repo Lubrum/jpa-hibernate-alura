@@ -3,7 +3,7 @@ package com.luciano.exemplo.dao;
 import com.luciano.exemplo.model.Categoria;
 import com.luciano.exemplo.model.Produto;
 
-import javax.persistence.EntityManager;
+import jakarta.persistence.EntityManager;
 import java.math.BigDecimal;
 import java.util.List;
 

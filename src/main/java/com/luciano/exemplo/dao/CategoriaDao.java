@@ -2,7 +2,7 @@ package com.luciano.exemplo.dao;
 
 import com.luciano.exemplo.model.Categoria;
 
-import javax.persistence.EntityManager;
+import jakarta.persistence.EntityManager;
 
 public class CategoriaDao {
 

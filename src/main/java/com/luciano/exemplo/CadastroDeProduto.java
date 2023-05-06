@@ -6,7 +6,7 @@ import com.luciano.exemplo.model.Categoria;
 import com.luciano.exemplo.model.Produto;
 import com.luciano.exemplo.util.JPAUtil;
 
-import javax.persistence.EntityManager;
+import jakarta.persistence.EntityManager;
 import java.math.BigDecimal;
 import java.util.List;
 
