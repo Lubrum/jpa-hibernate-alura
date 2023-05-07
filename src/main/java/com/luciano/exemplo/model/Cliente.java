@@ -10,40 +10,29 @@ public class Cliente {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String nome;
-
-    private String cpf;
+    @Embedded
+    private DadosPessoais dadosPessoais;
 
     public Cliente() {
     }
 
     public Cliente(String nome, String cpf) {
-        this.nome = nome;
-        this.cpf = cpf;
+        this.dadosPessoais = new DadosPessoais(nome, cpf);
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
+        return this.getDadosPessoais().getNome();
     }
 
     public String getCpf() {
-        return cpf;
+        return this.getDadosPessoais().getCpf();
     }
 
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    @Override
-    public String toString() {
-        return "Cliente{" +
-                "id=" + id +
-                ", nome='" + nome + '\'' +
-                ", cpf='" + cpf + '\'' +
-                '}';
+    public DadosPessoais getDadosPessoais() {
+        return dadosPessoais;
     }
 }

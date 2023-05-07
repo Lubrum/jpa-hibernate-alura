@@ -3,6 +3,7 @@ package com.luciano.exemplo;
 import com.luciano.exemplo.dao.CategoriaDao;
 import com.luciano.exemplo.dao.ProdutoDao;
 import com.luciano.exemplo.model.Categoria;
+import com.luciano.exemplo.model.CategoriaId;
 import com.luciano.exemplo.model.Produto;
 import com.luciano.exemplo.util.JPAUtil;
 
@@ -49,6 +50,9 @@ public class CadastroDeProduto {
         categoriaDao.cadastrar(categoria);
         produtoDao.cadastrar(celular);
         em.getTransaction().commit();
+
+        Categoria categoriaTeste = em.find(Categoria.class, new CategoriaId("CELULARES", "xpto"));
+        System.out.println(categoriaTeste);
         em.close();
 
         // transient, managed, detached e removed, estados de entidade JPA/Hibernate
