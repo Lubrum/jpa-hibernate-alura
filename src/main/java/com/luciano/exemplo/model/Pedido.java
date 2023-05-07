@@ -20,7 +20,7 @@ public class Pedido {
 
     private LocalDate data = LocalDate.now();
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private Cliente cliente;
 
     //    @ManyToMany
@@ -73,5 +73,9 @@ public class Pedido {
         item.setPedido(this);
         this.itens.add(item);
         this.valorTotal = this.valorTotal.add(item.getValor());
+    }
+
+    public List<ItemPedido> getItens() {
+        return itens;
     }
 }
