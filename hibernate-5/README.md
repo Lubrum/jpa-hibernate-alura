@@ -1,0 +1,12 @@
+# Curso Persistência com JPA e Hibernate - Alura
+
+# Execução
+
+Para testar o funcionamento do hibernate, temos quatro classes main para testes distintos:
+
+- CadastroDePedido;
+- CadastroDeProduto;
+- ProformanceConsulta;
+- TesteCriteria;
+
+Para testar o cadastro de pedido, por exemplo, no IntelliJ basta dar run no 'CadastroDePedido-hib5' (hib5 é o prefixo que indica a versão do Hibernate, neste caso, a 5).

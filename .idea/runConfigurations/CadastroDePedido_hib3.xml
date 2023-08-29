@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="CadastroDePedido-hib-6" type="Application" factoryName="Application">
+  <configuration default="false" name="CadastroDePedido-hib3" type="Application" factoryName="Application">
     <option name="MAIN_CLASS_NAME" value="com.luciano.exemplo.CadastroDePedido" />
-    <module name="hibernate-6" />
+    <module name="hibernate-3" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="com.luciano.exemplo.*" />

@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="CadastroDePedido-hib-4" type="Application" factoryName="Application">
+  <configuration default="false" name="CadastroDePedido-hib4" type="Application" factoryName="Application">
     <option name="MAIN_CLASS_NAME" value="com.luciano.exemplo.CadastroDePedido" />
     <module name="hibernate-4" />
     <option name="VM_PARAMETERS" value="--add-opens java.base/java.lang=ALL-UNNAMED" />
